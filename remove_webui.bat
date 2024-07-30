@@ -1,5 +1,5 @@
 %echo off
-ECHO Setting all interface DHCP Client-ID to webui
+ECHO Removing DHCP Client-ID from all interfaces
 ECHO:
 FOR /f %%X IN ('reg query HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces\') DO (
  SETLOCAL EnableDelayedExpansion
